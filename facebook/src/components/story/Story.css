@@ -1,0 +1,240 @@
+#story-parent-div {
+    height: 100vh;
+    width: 100%;
+    /* border: 1px solid #000; */
+    display: flex;
+}
+
+#stroy-left-area {
+    height: 100vh;
+    width: 25%;
+    border: 1px solid #e4e2e2;
+}
+
+#circles-close-logo {
+    height: 8vh;
+    width: 100%;
+    border: 1px solid #e4e2e2;
+    display: flex;
+    align-items: center;
+}
+#linker-above-circle-for-close{
+    height: 6vh;
+    width: 12%;
+}
+
+#circle-for-close {
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid #000; */
+    border-radius: 50px;
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b0b0b0;
+}
+
+#circle-for-close>i {
+    /* font-weight: 500; */
+    color: white;
+}
+
+#circle-for-logo {
+    height: 6vh;
+    width: 12%;
+    /* border: 1px solid #000; */
+    border-radius: 50px;
+    margin-left: 2%;
+    overflow: hidden;
+}
+
+#circle-for-logo>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#your-story-div {
+    height: 25vh;
+    width: 100%;
+    border: 1px solid #b0b0b0;
+}
+
+#story-owner-name {
+    height: 10vh;
+    width: 100%;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center
+}
+
+#inside-owner-name {
+    height: 80%;
+    width: 80%;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+}
+
+#inside-owner-namesetting-div {
+    height: 80%;
+    width: 20%;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#setting-icon-holder {
+    height: 60%;
+    width: 50%;
+    /* border: 1px solid #000; */
+    background-color: #e4e2e2;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#owner-name-pro-image-parent {
+    height: 15vh;
+    width: 100%;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+}
+
+#owner-pro-image-holder {
+    height: 10vh;
+    width: 20%;
+    /* border: 1px solid #000; */
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#owner-pro-image-holder>img {
+    height: 100%;
+    width: 100%;
+}
+
+#story-right-area {
+    height: 100vh;
+    width: 75%;
+    /* border: 1px solid #000; */
+}
+
+#story-right-area-top-logos {
+    height: 8vh;
+    width: 100%;
+    /* border: 1px solid #000; */
+}
+
+#right-conner-story-logo-parent {
+    height: 8vh;
+    width: 30%;
+    /* border: 1px solid #000; */
+    margin-left: auto;
+    margin-right: 0;
+    display: flex;
+
+}
+
+#right-conner-story-logo-parent>div {
+    margin-left: auto;
+    margin-right: 0;
+    height: 100%;
+    width: 40%;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+}
+
+#right-conner-logo-holder-div {
+    height: 6vh;
+    width: 30%;
+    /* border: 1px solid #000; */
+    background-color: #e4e2e2;
+    border-radius: 50%;
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#right-conner-logo-holder-div>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#story-right-inner-frame {
+    height: 92vh;
+    width: 100%;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#story-uploading-parent-div {
+    height: 45vh;
+    width: 45%;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#story-image-upload-div {
+    height: 90%;
+    width: 40%;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    flex-direction: column;
+    background-image: url(./../../image/backgroundBluePurple.png);
+    background-size: fill;
+}
+
+#story-image-upload-div>p {
+    margin-top: 2%;
+    font-weight: 600;
+    color: white;
+}
+
+.story-uploading-logo-holder {
+    height: 6vh;
+    width: 22%;
+    /* border: 1px solid #000; */
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#story-text-upload-div {
+    height: 90%;
+    width: 40%;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(./../../image/backgroundPinkPurple.png);
+    background-size: fill;
+
+}
+
+#story-text-upload-div>p {
+    margin-top: 2%;
+    font-weight: 600;
+    color: white;
+}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Home.css";
 import videoimage from "./../../image/fbvideo.png";
 import bookmarkimage from "../../image/fbbookmark.png";
@@ -11,6 +11,7 @@ import Navbar from "./../navbar/Navbar";
 
 
 const Home = () => {
+  const [createPostOpen, setCreatePostOpen] = useState(false)
   return (
     <>
       <Navbar />
@@ -67,7 +68,7 @@ const Home = () => {
               <div id="profile-image-holder-inner-body">
                 <img src="https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-unknown-social-media-user-photo-default-avatar-profile-icon-vector-unknown-social-media-user-184816085.jpg" />
               </div>
-              <div id="profile-search-area-inner-body">
+              <div id="profile-search-area-inner-body" onClick={() => setCreatePostOpen(true)}>
                 <input placeholder="What's on your mind, Rocky" />
               </div>
             </div>
@@ -166,7 +167,65 @@ const Home = () => {
             <p className='group-addition'><i class="fa-solid fa-circle-plus"></i> Create New Group</p>
           </div>
         </div>
-      </div>
+        {createPostOpen ? <div id="create-post-home-model">
+          <div id="create-post-pop">
+            <div id="create-post-pop-header">
+              <p><h2>Create post</h2></p>
+              <div id="eliminate-create-post-pop" onClick={() => setCreatePostOpen(false)}>
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+          <div id="create-post-current-user-image-name">
+            <div id="create-post-current-user-image-holder">
+              <img src="https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-unknown-social-media-user-photo-default-avatar-profile-icon-vector-unknown-social-media-user-184816085.jpg" />
+            </div>
+            <div id="create-post-name-option">
+              <p>Rocky Joseph Gomes</p>
+              <div id="create-post-pop-selector-div">
+                <i class="fa-solid fa-user-group"></i>
+                <p>Friends</p>
+                <i class="fa-solid fa-caret-down"></i>
+              </div>
+            </div>
+          </div>
+          <div id="create-post-pop-input-parent">
+            <input id="create-post-pop-input" placeholder="What's on your mind, rocky?" />
+            <div id="create-post-imoji-font-parent">
+              <div id="create-post-font">
+                <img src="https://www.facebook.com/images/composer/SATP_Aa_square-2x.png" />
+              </div>
+              <div id="create-imoji-div">
+                <i class="fa-regular fa-face-smile"></i>
+              </div>
+            </div>
+          </div>
+          <div id="create-post-file-type-parent-div">
+            <p>Add to your post</p>
+            <div id="file-type-uploader-align">
+              <div className='file-type-uploader-children-div'>
+                <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yC/r/a6OjkIIE-R0.png" />
+              </div>
+              <div className='file-type-uploader-children-div'>
+                <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yC/r/MqTJr_DM3Jg.png" />
+              </div>
+              <div className='file-type-uploader-children-div'>
+                <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yk/r/yMDS19UDsWe.png" />
+              </div>
+              <div className='file-type-uploader-children-div'>
+                <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yy/r/uywzfiZad5N.png" />
+              </div>
+              <div className='file-type-uploader-children-div'>
+                <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yX/r/j0Jp-GpONWx.png" />
+              </div>
+              <div className='file-type-uploader-children-div'>
+                <i class="fa-solid fa-ellipsis"></i>
+              </div>
+            </div>
+          </div>
+          <button id="create-post-btn">Post</button>
+        </div>
+        </div> : ""}
+    </div >
     </>
   )
 }

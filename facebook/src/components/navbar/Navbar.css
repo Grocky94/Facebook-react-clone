@@ -24,11 +24,17 @@ nav {
 
 #navbar-logo {
     height: 6vh;
-    width: 9%;
+    width: 90%;
     /* border: 1px solid #000; */
     border-radius: 50px;
     margin-left: 2%;
     overflow: hidden;
+}
+
+.linkingtag-logo {
+    width: 10%;
+    display: flex;
+    align-items: center;
 }
 
 #navbar-logo>img {
@@ -97,4 +103,91 @@ nav {
 .notification-icon-circle-navbar>img {
     height: 100%;
     width: 100%;
+}
+
+#navbar-user-image-logout-model {
+    /* height: 30vh; */
+    width: 25vw;
+    border: 1px solid #e4e6eb;
+    border-radius: 10px;
+    position: absolute;
+    right: 0;
+    background-color: white;
+}
+
+
+#navbar-profile-pop {
+    height: 15vh;
+    width: 95%;
+    border: 1px solid #e4e6eb;
+    margin-left: 2.5%;
+    border-radius: 10px;
+    margin-top: 2%;
+    box-shadow: 1px 1px 1px rgb(191, 191, 191);
+}
+
+#linkingtag {
+    text-decoration: none;
+    color: black;
+}
+
+#current-user-image-n-name {
+    height: 8vh;
+    width: 95%;
+    border-bottom: 1px solid #e4e6eb;
+    margin-left: 2.5%;
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+
+#current-user-image-holder-navbar-pop {
+    height: 5vh;
+    width: 10%;
+    border: 1px solid #e4e6eb;
+    border-radius: 50px;
+    margin-left: 2%;
+    overflow: hidden;
+}
+
+#current-user-image-holder-navbar-pop>img {
+    height: 100%;
+    width: 100%;
+}
+
+#current-user-image-n-name>p {
+    margin-left: 4%;
+}
+
+#current-user-pop-see-all {
+    color: rgb(49, 133, 243);
+    font-size: 1.1em;
+    margin: 5%;
+    font-weight: 600;
+}
+
+#current-user-pop-logout-logo-parent {
+    height: 8vh;
+    width: 90%;
+    /* border: 1px solid #000; */
+    margin-left: 5%;
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+}
+
+#logout-logo-pop-image-holder {
+    height: 5vh;
+    width: 10%;
+    border: 1px solid #e4e6eb;
+    border-radius: 50px;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#current-user-pop-logout-logo-parent>p {
+    margin-left: 2%;
 }
